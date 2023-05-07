@@ -20,3 +20,23 @@ iteration(arr2);
 let arr3 = strArr.replaceAll(",", "+");
 console.log(arr3);
 console.log(eval(arr3));
+
+
+//-------------------
+
+// By using recurtion
+
+let array2 = [1, 2, [3, [4], 5], 6];
+let total2 = 0;
+function iteration2(array2){
+  for (let arr of array2) {
+    if(typeof arr == "object"){
+      iteration2(arr)
+    }else{
+      total2 = total2 + arr;
+    } 
+  }
+}
+
+iteration2(array2);
+console.log("total2 =>",total2);
