@@ -1,0 +1,11 @@
+let text = "The rain in SPAIN stays mainly in the plain";
+let result = text.match("ain");
+
+console.log(result);
+
+// The match() Method
+// match() searches for a match in a string.
+
+// Do a search for "ain":
+
+//resturn an array of information with match inputs
