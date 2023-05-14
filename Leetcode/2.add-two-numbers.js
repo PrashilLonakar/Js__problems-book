@@ -22,6 +22,8 @@
 // Output: [7,0,8]
 // Explanation: 342 + 465 = 807.
 
+//1st way
+
 let l1 = [2,4,3];
 let l2 = [5,6,4];
 
@@ -37,6 +39,35 @@ var addTwoNumbers = function(l1, l2) {
 };
 
 console.log(addTwoNumbers(l1,l2));
+
+
+//2nd way
+
+let l11 = [2,4,3,5,8,2];
+let l22 = [5,6,4];
+
+console.log('l22',l22[3]);
+let output11;
+
+let twoNumLoop = function(l11,l22){
+    if(l11.length >= l22.length){
+
+    }else{
+        let temp =  l11;
+        l11 = l22;
+        l22 = temp;
+    }
+    for(let i = l11.length - 1;i >= 0;i--){ //reverse loop
+        console.log("l11",l11[i]);
+        console.log("l22",(l22[i - (l22.length - 1)] == undefined ? 0 : l22[i - (l22.length - 1)]));
+        let temporary = l11[i] + (l22[i - (l22.length)] == undefined ? 0 : l22[i - (l22.length)]);
+        console.log("temporary",temporary);
+    }
+}
+
+twoNumLoop(l11,l22)
+
+
 
 // Example 2:
 
