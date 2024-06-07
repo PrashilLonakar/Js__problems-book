@@ -50,7 +50,6 @@ console.log(twoSum(nums,targets));
 // Input: nums2 = [2,7,11,15], target2 = 9
 // Output: [0,1]
 
-let output = [];
 let input = [3,3];
 //[3,2,4];
 //[2,7,11,15];
@@ -58,7 +57,12 @@ let target = 6;
 //6;
 //9;
 
+let input2 = [2,7,11,15];
+// Output: [0,1]
+let target2 = 6;
+
 let twoSumOutput = function(input, target){
+    let output = [];
     for(let i = 0;i <= input.length - 1;i++){
         for(let j = i + 1;j <= input.length - 1;j++){
             if((input[i] + input[j]) == target){
@@ -70,3 +74,4 @@ let twoSumOutput = function(input, target){
 }
 
 twoSumOutput(input, target);
+twoSumOutput(input2, target2);
