@@ -1,0 +1,36 @@
+{
+    "folders": [
+        {
+            "path": "./"
+        }
+    ],
+    "settings": {
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": true,
+        "editor.tabSize": 4,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "prettier.tabWidth": 4,
+        "[html]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[typescript]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "prettier.useTabs": false,
+        "prettier.printWidth": 100,
+        "prettier.singleQuote": true,
+        "prettier.trailingComma": "all",
+        "prettier.htmlWhitespaceSensitivity": "strict",
+
+        "[xml]": {
+            "editor.defaultFormatter": "redhat.vscode-xml"
+        },
+        "[scss]": {
+            "editor.defaultFormatter": "vscode.css-language-features"
+        }
+    },
+    "extensions": {
+        "recommendations": ["wayou.vscode-todo-highlight", "esbenp.prettier-vscode"]
+    }
+}
