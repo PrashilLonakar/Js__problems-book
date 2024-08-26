@@ -62,7 +62,6 @@ let k = 3;
 for (let i = 0; i <= k; i++) {
     let firstElement = nums.shift();
     nums.push(firstElement);
-    console.log('firstElement');
 }
 
 console.log('nums', nums);
@@ -85,6 +84,23 @@ for (let i = 0; i <= k; i++) {
 
 console.log('nums2', nums2);
 
+// Solution 3:
+//Input:
+
+let nums5 = [1, 2, 3, 4, 5, 6, 7];
+
+for (let j = 0; j <= k; j++) {
+    for (let i = 0; i <= nums5.length - 1; i++) {
+        if (i == nums5.length - 1) {
+            // Move the first element to the end of the array
+            let firstElement = nums5.shift();
+            nums5.push(firstElement);
+        }
+    }
+}
+
+console.log('nums5', nums5);
+
 //Example 2:
 
 // Solution 1:
@@ -98,7 +114,6 @@ let k2 = 2;
 for (let i = 1; i <= k2; i++) {
     let firstElement = nums3.shift();
     nums3.push(firstElement);
-    console.log('firstElement');
 }
 
 console.log('nums3', nums3);
