@@ -60,3 +60,40 @@ function reverseArray(arr) {
 s = reverseArray(arr6);
 
 console.log('Recursion', s);
+
+//Solution 7:
+//Solution with 2 loops in single for loop
+
+let arr7 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+let n = arr7.length;
+let temp;
+for (let i = 0, j = n - 1; i <= n / 2; i++, j--) {
+    if (j > i) {
+        temp = arr7[i];
+        arr7[i] = arr7[j];
+        arr7[j] = temp;
+    }
+}
+
+console.log('2 loops in single for loop', arr7);
+
+//Solution 8:
+//Solution with while loop
+
+let arr9 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let n1 = arr9.length;
+let temp1;
+let i = 0;
+let j = 0;
+while (i <= n1 / 2) {
+    while (j >= n1 / 2) {
+        if (j > i) {
+            temp1 = arr9[i];
+            arr9[i] = arr9[j];
+            arr9[j] = temp1;
+        }
+    }
+}
+
+console.log('while loop', arr9);
