@@ -101,6 +101,16 @@ for (let j = 0; j <= k; j++) {
 
 console.log('nums5', nums5);
 
+// Solution 4:
+//Input:
+//With using splice and reverse
+
+let nums6 = [1, 2, 3, 4, 5, 6, 7];
+var b = nums6.splice(0, k + 1);
+b = b.reverse();
+nums6 = [...nums6, ...b];
+console.log('nums6', nums6);
+
 //Example 2:
 
 // Solution 1:
