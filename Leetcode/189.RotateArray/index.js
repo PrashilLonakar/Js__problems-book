@@ -111,6 +111,20 @@ b = b.reverse();
 nums6 = [...nums6, ...b];
 console.log('nums6', nums6);
 
+// Solution 5:
+//Input:
+//With using splice and reverse
+
+let nums7 = [1, 2, 3, 4, 5, 6, 7];
+var rotate = function (nums, k) {
+    var b = nums.splice(0, k + 1);
+    b = b.reverse();
+    let num = [...nums, ...b];
+    return num;
+};
+
+console.log('rotate array', rotate(nums7, k));
+
 //Example 2:
 
 // Solution 1:
