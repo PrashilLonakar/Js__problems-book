@@ -4,7 +4,6 @@
 let words = ['i', 'love', 'leetcode', 'apples'];
 let prefixWords = [];
 prefixWords[0] = words[0];
-
 for (let i = 1; i < words.length; i++) {
     prefixWords[i] = prefixWords[i - 1] + words[i];
 }
