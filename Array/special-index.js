@@ -33,3 +33,43 @@ onSpecialIndex = (arr) => {
 onSpecialIndex(array);
 onSpecialIndex(array2);
 onSpecialIndex(array3);
+
+onSpecialIndex2 = (arr) => {
+    let specialIndexArr = [];
+    let currentEven = 0;
+    let currentOdd = 0;
+    let totalEven = 0;
+    let totalOdd = 0;
+    for (let i = 0; i < arr.length; i++) {
+        let currentIndex = arr[i];
+        if (i % 2 === 0) {
+            totalEven += arr[i];
+        } else {
+            totalOdd += arr[i];
+        }
+    }
+
+    for (let i = 0; i < arr.length; i++) {
+        let currentIndex = arr[i];
+        if (i % 2 === 0) {
+            totalEven -= arr[i];
+        } else {
+            totalOdd -= arr[i];
+        }
+        if (i % 2 === 0) {
+            currentEven += arr[i];
+        } else {
+            currentOdd += arr[i];
+        }
+
+        if (currentEven + totalOdd === totalEven + currentOdd) {
+            specialIndexArr.push(arr[i]);
+        }
+    }
+    console.log('specialIndexArr>>>>', specialIndexArr);
+    return specialIndexArr;
+};
+
+onSpecialIndex2(array);
+onSpecialIndex2(array2);
+onSpecialIndex2(array3);
